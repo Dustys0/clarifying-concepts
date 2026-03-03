@@ -40,7 +40,7 @@ V3 – Interactive tools, simulations, and infrastructure
 - Code is licensed under the MIT License.
 - Educational content is licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
 
-This means the content may be shared, adapted, and used commercially, provided proper credit is given to the original creator (dusty).
+This means the content may be shared, adapted, and used commercially, provided proper credit is given to the original creator (dusty_s0 [email : dusty_s0@protonmail.com]).
 
 ---
 
