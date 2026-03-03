@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Topics | Clarifying Concepts</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .topic-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s ease;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .back-home a {
+            text-decoration: none;
+            background: #1f2937;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header style="background:#1f2937; color:white; text-align:center; padding:20px;">
+    <h1>📘 Topics</h1>
+    <p>Structured learning in Mathematics and Physics</p>
+</header>
+
+<div class="container">
+
+    <!-- Mathematics -->
+    <h2>Mathematics</h2>
+    <div class="topic-grid">
+        <a href="mathtopics/functions.html" class="topic-card">Functions</a>
+        <a href="mathtopics/limits.html" class="topic-card">Limits</a>
+        <a href="mathtopics/derivatives.html" class="topic-card">Derivatives</a>
+        <a href="mathtopics/applications-of-derivatives.html" class="topic-card">Applications of Derivatives</a>
+        <a href="mathtopics/quadratic.html" class="topic-card">Quadratic Equations</a>
+    </div>
+
+    <!-- Physics -->
+    <h2>Physics</h2>
+    <div class="topic-grid">
+        <a href="physicstopics/force.html" class="topic-card">Force</a>
+        <a href="physicstopics/newtons-laws.html" class="topic-card">Newton’s Laws</a>
+        <a href="physicstopics/equations-of-motion.html" class="topic-card">Equations of Motion</a>
+        <a href="physicstopics/momentum.html" class="topic-card">Momentum</a>
+        <a href="physicstopics/gravity.html" class="topic-card">Gravity</a>
+        <a href="physicstopics/magnetism.html" class="topic-card">Magnetism</a>
+    </div>
+
+</div>
+
+<div class="back-home">
+    <a href="../index.html">← Back to Home</a>
+</div>
+
+<footer style="text-align:center; padding:15px; background:#e5e7eb;">
+    © 2026 Clarifying Concepts
+</footer>
+
+</body>
+</html>
