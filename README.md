@@ -35,7 +35,7 @@ V3 – Interactive tools, simulations, and infrastructure
 
 ## Licensing
 
-© 2026 dusty
+© 2026 dusty_s0
 
 - Code is licensed under the MIT License.
 - Educational content is licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
