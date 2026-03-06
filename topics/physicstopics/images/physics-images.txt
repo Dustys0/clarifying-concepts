@@ -1,0 +1,1 @@
+all images regarding topics of physics will be stored in this folder
