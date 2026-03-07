@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curious Questions | Clarifying Concepts</title>
+    <style>
+      body
+      { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+      header { background: #111; color: white; padding: 20px; text-align: center; } 
+      .container { max-width: 900px; margin: auto; padding: 20px; } 
+      .search-box { width: 100%; padding: 12px; font-size: 16px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #ccc; }
+      .question { background: white; padding: 15px; margin: 10px 0; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); } 
+      .question a { text-decoration: none; color: #333; font-weight: bold; } .question a:hover { color: #0066cc; } 
+    </style> 
+  </head> 
+  <body>
+    <header> 
+      <h1>Curious Questions</h1>
+      <p> Explore questions that lead to deeper understanding. </p> 
+    </header> 
+    <div class="container"> 
+      <input type="text" id="searchInput" class="search-box" placeholder="Search questions..." > 
+      <div id="questionList">
+        <div class="question"> 
+          <a href="physics/newtons-first-law.html"> Why do objects keep moving in space? </a> 
+        </div> 
+        <div class="question"> <a href="physics/momentum.html"> Why does momentum stay conserved in collisions? </a> 
+        </div> 
+        <div class="question"> <a href="math/limits.html"> Why are limits needed in calculus? </a> </div> 
+        <div class="question"> <a href="math/derivatives.html"> Why do derivatives measure change? </a> </div> 
+        <div class="question"> <a href="physics/gravity.html"> Why do all objects fall with the same acceleration? </a>  </div>
+        <script> 
+          const searchInput = document.getElementById("searchInput");
+          const questions = document.querySelectorAll(".question"); 
+          searchInput.addEventListener ( "keyup" 
+                                        function () {
+            let filter = searchInput.value.toLowerCase(); 
+            questions.forEach ( function(q) { 
+              let text = q.textContent.toLowerCase();
+              if(text.includes(filter)) 
+              { q.style.display = "block"; }
+              else { q.style.display = "none"; } } ); } );
+        </script>
+      </body>     
+      </html> 
