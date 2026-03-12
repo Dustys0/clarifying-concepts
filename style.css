@@ -1,94 +1,40 @@
-/* Reset */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+css /* ===== Base Reset ===== */
+*{ margin:0; padding:0; box-sizing:border-box; }
+/* ===== Body ===== */
+body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; background:#f5f5f5; color:#111; }
+/* ===== Main Content Container ===== */
+.container{ max-width:800px; margin:auto; background:white; padding:40px; }
+/* ===== Headings ===== */
+h1{ font-size:36px; margin-bottom:20px; }
+h2{ font-size:26px; margin-top:35px; margin-bottom:15px; }
+h3{ font-size:20px; margin-top:25px; margin-bottom:10px; }
+/* ===== Paragraphs ===== */
+p{ margin-bottom:18px; font-size:1.05rem; }
+/* ===== Lists ===== */
+ul,ol{ margin-left:25px; margin-bottom:20px; }
+/* ===== Links ===== */
+a{ color:#1565c0; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+/* ===== Images ===== */
+img{ max-width:100%; height:auto; margin:15px 0; }
+/* ===== Code / Math Blocks ===== */
+pre{ background:#f4f4f4; padding:12px; border-radius:6px; overflow-x:auto; margin-bottom:20px; }
+code{ background:#f4f4f4; padding:3px 6px; border-radius:4px; }
+/* ===== Horizontal Line ===== */
+hr{ margin:35px 0; border:none; border-top:1px solid #ddd; }
+/* ===== Mobile Phones ===== */
+@media (max-width:600px){
+.container{ padding:20px; max-width:100%; }
+body{ font-size:16px; }
+h1{ font-size:28px; }
+h2{ font-size:22px; }
 }
-
-/* Page */
-body{
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:#f4f6f8;
-    color:#1a1a1a;
-    line-height:1.7;
+/* ===== Tablets ===== */
+@media (min-width:601px) and (max-width:1024px){
+.container{ max-width:720px; padding:30px; }
+h1{ font-size:32px; }
 }
-
-/* Main container */
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:50px;
-}
-
-/* Main title */
-h1{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-/* Section titles */
-h2{
-    font-size:24px;
-    margin-top:40px;
-    margin-bottom:10px;
-}
-
-/* Paragraph spacing */
-p{
-    margin-bottom:16px;
-}
-
-/* Section divider */
-section{
-    margin-top:35px;
-    padding-bottom:25px;
-    border-bottom:1px solid #e6e6e6;
-}
-
-/* Subtopic blocks */
-.subtopic{
-    margin-top:25px;
-}
-
-.subtopic h3{
-    font-size:20px;
-    margin-bottom:6px;
-}
-
-/* Diagram */
-.diagram{
-    text-align:center;
-    margin:25px 0;
-}
-
-.diagram img{
-    max-width:100%;
-}
-
-.caption{
-    font-size:14px;
-    color:#666;
-}
-
-/* History box */
-.history{
-    background:#f7f7f7;
-    padding:18px;
-    border-left:4px solid #888;
-}
-
-/* Extras box */
-.extras{
-    background:#fafafa;
-    padding:18px;
-    border-left:4px solid #444;
-}
-
-/* Footer */
-footer{
-    margin-top:50px;
-    text-align:center;
-    font-size:14px;
-    color:#777;
-}
+/* ===== Large Screens ===== */
+@media (min-width:1025px){
+.container{ max-width:800px; }
+} '''
