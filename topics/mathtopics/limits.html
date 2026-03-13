@@ -5,6 +5,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script> 
+
+<style>
+  /* This CSS fix prevents math from creating giant vertical gaps */
+  .katex-display {
+    margin: 1em 0; /* Space for standalone equations */
+    overflow-x: auto; /* Adds scrollbar on mobile if equation is too wide */
+    overflow-y: hidden;
+  }
+  .katex {
+    font-size: 1.1em; /* Makes it match your text size better */
+  }
+</style>
 <title>Limits | ClarifyingConcepts</title> 
 
 <!--
@@ -59,7 +74,7 @@ Limit is the value which shows what is f(x) moving toward for a specific value o
 </section> 
 <div class="subtopic">
 <h3>limit from a table</h3>
-<p>to calculate limit from a table we take values from both left and right. the example is of lim<sub>x–>1</sub>f(x)=x²-1/x-1.</p>
+<p>to calculate limit from a table we take values from both left and right. the example is of lim<sub>x–>1</sub>f(x)=\frac{x²-1}{x-1}.</p>
 <div class="diagram">
 <img src="images/table_of_values.png">
 <p class="caption">table of value</p>
