@@ -6,7 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Function | ClarifyingConcepts</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script> 
 
+<style>
+  /* This CSS fix prevents math from creating giant vertical gaps */
+  .katex-display {
+    margin: 1em 0; /* Space for standalone equations */
+    overflow-x: auto; /* Adds scrollbar on mobile if equation is too wide */
+    overflow-y: hidden;
+  }
+  .katex {
+    font-size: 1.1em; /* Makes it match your text size better */
+  }
+</style>
 <!--
 Project: ClarifyingConcepts
 Author: dusty_s0
