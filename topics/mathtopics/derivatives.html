@@ -1,3 +1,125 @@
-<html>
-this is in progress  
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<title>Derivatives | ClarifyingConcepts</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script> 
+
+<style>
+  /* This CSS fix prevents math from creating giant vertical gaps */
+  .katex-display {
+    margin: 1em 0; /* Space for standalone equations */
+    overflow-x: auto; /* Adds scrollbar on mobile if equation is too wide */
+    overflow-y: hidden;
+  }
+  .katex {
+    font-size: 1.1em; /* Makes it match your text size better */
+  }
+</style>
+<!--
+Project: ClarifyingConcepts
+Author: dusty_s0
+License: MIT (code) + CC BY 4.0 (content)
+Content embedded in code is treated as educational content.
+--> 
+
+<link rel="stylesheet" href=" ../../style.css"> 
+
+</head> 
+
+<body> 
+
+<div class="container"> 
+
+<h1>Derivatives</h1> 
+
+<section>
+<h2>Concept Explanation</h2>
+<p>Derivative is the slope of a curve or A derivative measures the instaneous rate of change of a function with respect to its variable.
+</p>
+</section> 
+
+<section> 
+
+<h2>Subtopics</h2> 
+
+<div class="subtopic">
+<h3>Definition</h3>
+<p>The slope of the tangent line to the function's graph at a given point.</p>
+</div> 
+
+<div class="subtopic">
+<h3>Notation</h3>
+<p>Deravatives are mostly represented by dy/dx or f'(x). f'(x) is read as f prime of x. dy/dx represents derivative of y in respect to derivative of x as a fraction.although there are many more ways used to denote derivative.</p>
+</div> 
+
+<div class="subtopic">
+<h3>Derivatives as a limit</h3>
+<p>The derivative of a function is equal to the limit of the average rate of change as the number approaches 0. So what it means is we take two points x and x+h then calculate f(x) and f(x+h) and plot them then we calculate the slope of secant between them and put a limit on slope of secant as h approaches 0 and the secant becomes tangent. The formula of derivative through this method is f'(x)=lim<sub>h->0</sub> f(x+h)-f(x)/(x+h)-x the expression after limit gives slope as slope is y<sub>2</sub>-y<sub>1</sub>/x<sub>2</sub>-x<sub>1</sub></p> 
+
+<div class="diagram">
+<img src="../images/graph-derivativeAsLimit.png">
+<p class="caption">The process shown visually</p>
+</div> 
+</div> 
+
+<div class="subtopic">
+<h3>Power rule</h3>
+<p> The power rule states to find f'(x) where f(x)=x<sup>n</sup> the f'(x) will be equal to n•x<sup>n-1</sup> where n is a real number. the formula is f'(x)=n•x<sup>n-1</sup>, if the funtion is f(x)=a•x<sup>n</sup> then f'(x)=a•n•x<sup>n-1</sup></p>  
+</div>
+  
+<div class="subtopic">
+<h3>Constant rule</h3>
+<p>The constant rule states if a function gives a constant for all values of x. then f prime will be 0. In mathematical terms if f(x)=c then f'(x)=0</p>
+</div>
+
+<div class="subtopic">
+<h3>Sum and Difference rule</h3>
+<p>The sum and difference rule states that the derivative of sum or difference of two functions is equal to the sum or difference of derivatives of those two functions.If you are doing sum do sum both side and if you do difference do difference both side.d/dx[f(x)±g(x)]=f'(x)±g'(x).</p>
+
+</div>   
+<div class="subtopic">
+<h3>Product rule</h3>
+<p>It is a rule to find derivative of two or more functions which are multiplied. Formula is d/dx[f(x)•g(x)]=f'(x)•g(x)+f(x)•g'(x).</p>
+</div>
+
+<div class="subtopic">
+<h3>Quotient rule</h3>
+<p>This rule helps us find derivative of quotient of two functions. Formula is d/dx[f(x)/g(x)]=[{g(x)•f'(x)}-{f(x)•g'(x)}]/g(x)².</p>
+<p>so if we use formula f'(x)=lim<sub>h->0</sub> f(x+h)-f(x)/(x+h)-x we can actually derive it , give it  a try by putting it in d/dx[f(x)/g(x)]</p>
+</div>
+
+</section> 
+
+<section class="history">
+<h2>History Corner</h2>
+<p>
+ Derivatives were found by Issac Newton and Gottfried Wibhelm Libniz. they discovered it to calculate instaneous problems such as speed and motion.
+</p>
+</section> 
+
+<section class="extras">
+<h2>Extras Corner</h2> 
+
+<ol>
+<li>if f(x)=x<sup>3</sup> and g(x)=x<sup>2</sup>-2. find d/dx[f(g(x))]</li>
+<li>For the problem above are we getting 6(x²-2)³•2x and is it equal to f'(g(x))•g'(x)</li>
+</ol> 
+
+</section> 
+
+<footer>
+© 2026 Dusty_s0. ClarifyingConcepts™ |<a href="../../LICENSE">Content License</a>
+</footer>
+
+
+</div> 
+
+</body>
 </html>
